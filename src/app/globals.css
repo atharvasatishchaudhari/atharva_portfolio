@@ -1,0 +1,371 @@
+@import "tailwindcss";
+
+/* ---------- Global Theme ---------- */
+:root {
+  --background-gradient: linear-gradient(136.23deg, rgb(27, 41, 50) 2.73%, rgb(46, 71, 85) 96.28%);
+  --foreground: #ffffff;
+  --accent: #ffffff;
+}
+
+/* ---------- Page Background ---------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background-gradient);
+  color: var(--foreground);
+}
+
+/*---------- Remove section/box backgrounds ---------- */
+main, section, header, nav, div {
+  background: transparent !important;
+  color: var(--foreground) !important;
+  box-shadow: none !important;
+}
+
+/* ---------- Headings / Paragraphs / Text ---------- */
+h1, h2, h3, h4, h5, h6, p, span {
+  color: var(--foreground);
+}
+
+/* ---------- Nav Links ---------- */
+nav a {
+  position: relative;
+  display: inline-block;
+  color: var(--foreground) !important;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #D4AF37;
+  transition: width 0.3s ease;
+}
+
+nav a:hover {
+  color: #D4AF37 !important;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ---------- Institution Link ---------- */
+.institution-link {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.institution-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #D4AF37;
+  transition: width 0.3s ease;
+}
+
+.institution-link:hover {
+  color: #D4AF37;
+}
+
+.institution-link:hover::after {
+  width: 100%;
+}
+
+/* ---------- Animated Underline ---------- */
+@keyframes underline-grow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animated-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1px;
+  color: #D4AF37;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #D4AF37;
+  transition: width 0.3s ease;
+}
+
+.animated-underline:hover {
+  color: #D4AF37;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* ---------- Color Pulse Animation for About Me only ---------- */
+@keyframes color-pulse {
+  0% {
+    color: #ffffff;
+  }
+  40% {
+    color: #D4AF37;
+  }
+  60% {
+    color: #D4AF37;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+
+.color-pulse {
+  animation: color-pulse 6s ease-in-out infinite;
+}
+
+.skill-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.skill-row::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #D4AF37;
+  transition: width 0.4s ease;
+}
+
+.skill-label {
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.skill-arrow {
+  color: #D4AF37;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.skill-details {
+  color: #ffffff;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.4s ease, opacity 0.4s ease;
+}
+
+.skill-row:hover::after {
+  width: 100%;
+}
+
+.skill-row:hover .skill-label {
+  color: #ffffff;
+}
+
+.skill-row:hover .skill-details {
+  max-width: 1000px;
+  opacity: 1;
+}
+
+/* ---------- Golden Pulse Animation ---------- */
+@keyframes golden-pulse {
+  0%, 100% {
+    text-shadow: 0 0 2px #D4AF37, 0 0 4px #D4AF37;
+    color: #D4AF37;
+  }
+  50% {
+    text-shadow: 0 0 6px #D4AF37, 0 0 12px #D4AF37;
+    color: #D4AF37;
+  }
+}
+
+.golden-pulse {
+  animation: golden-pulse 2s infinite;
+  color: #D4AF37;
+}
+.award-highlight {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.award-highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #D4AF37;
+  transition: width 0.6s ease;
+}
+
+.award-highlight.show-underline::after {
+  width: 100%;
+}
+
+.resume-pulse {
+  animation: color-pulse 6s ease-in-out infinite;
+  color: #D4AF37;
+}
+
+.arrow-pulse {
+  animation: arrow-pulse 2s infinite;
+  color: white;
+}
+
+@keyframes arrow-pulse {
+  0%, 100% { opacity: 0.4; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(3px); }
+}
+
+/* Resume Box Edge Decorations */
+.resume-box {
+  position: relative;
+  padding: 2rem;
+  background-color: #1B263B;
+  color: white;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resume-box::before,
+.resume-box::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #D4AF37;
+}
+
+.resume-box::before {
+  top: 0;
+  left: 0;
+}
+
+.resume-box::after {
+  bottom: 0;
+  right: 0;
+}
+.resume-container {
+  position: relative;
+  background-color: #1B263B;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.resume-container::before,
+.resume-container::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #D4AF37;
+}
+
+.resume-container::before {
+  top: 0;
+  left: 0;
+}
+
+.resume-container::after {
+  bottom: 0;
+  right: 0;
+}
+
+.resume-embed {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8.5 / 11;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  background-color: #0D1B2A;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.download-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.download-text {
+  animation: color-pulse 6s ease-in-out infinite;
+  color: #D4AF37;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.arrow-pulse {
+  animation: arrow-pulse 2s infinite;
+  color: white;
+}
+/* Publication underline with golden pulse */
+.publication-underline {
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  margin-top: 4px;
+  animation: golden-background-pulse 2s infinite;
+}
+
+/* Animate the underline from white to gold and back */
+@keyframes golden-background-pulse {
+  0%, 100% {
+    background-color: #ffffff;
+  }
+  50% {
+    background-color: #D4AF37;
+  }
+}
+
+.header-override {
+  /* force your exact site gradient */
+  background: var(--background-gradient) !important;
+}
