@@ -69,6 +69,27 @@ export const projects: Project[] = [
     // no publication → no arrow/line will be rendered
   },
 
+   {
+    title: "MediHealth – Smart Appointment & Notification System",
+    duration: "(August 2024 – December 2024)",
+    image: "/medihealth.png",
+    link: "https://github.com/atharvasatishchaudhari/MediHealth---Smart-Appointment-Notification-System",
+    points: [
+      "MERN stack (MongoDB, Express, React, Node.js)",
+      "Vite-powered React SPA with Context API (JWT auth state)",
+      "Axios for REST calls; Socket.IO client for live slot updates",
+      "Express API with JWT-based, role-based auth and input validation",
+      "Mongoose schemas: User, Doctor, Appointment",
+      "Emergency-delay logic shifts all future bookings atomically",
+      "Socket.IO server emits slotAvailable & appointmentsShifted to relevant rooms",
+      "bcrypt password hashing; dotenv for env vars; CORS enabled",
+      "ESLint & Prettier configured; seedDoctors.js for initial data",
+      "Dockerfile templates and production build scripts included",
+      "Technologies used: React (Vite, Context API), Axios, Socket.IO client; Node.js, Express, JWT auth, input validation; MongoDB (Mongoose); Socket.IO server; bcrypt, CORS; dotenv, ESLint, Prettier; Dockerfile & production build scripts"
+    ]
+    // no publication
+  },
+
   {
     title: "Evaluating Semantic Understanding through Medical Text Classification",
     duration: "(Jan 2025 – May 2025)",
@@ -108,26 +129,7 @@ export const projects: Project[] = [
     // no publication
   },
 
-  {
-    title: "MediHealth – Smart Appointment & Notification System",
-    duration: "(June 2025 – July 2024)",
-    image: "/medihealth.png",
-    link: "https://github.com/atharvasatishchaudhari/MediHealth---Smart-Appointment-Notification-System",
-    points: [
-      "MERN stack (MongoDB, Express, React, Node.js)",
-      "Vite-powered React SPA with Context API (JWT auth state)",
-      "Axios for REST calls; Socket.IO client for live slot updates",
-      "Express API with JWT-based, role-based auth and input validation",
-      "Mongoose schemas: User, Doctor, Appointment",
-      "Emergency-delay logic shifts all future bookings atomically",
-      "Socket.IO server emits slotAvailable & appointmentsShifted to relevant rooms",
-      "bcrypt password hashing; dotenv for env vars; CORS enabled",
-      "ESLint & Prettier configured; seedDoctors.js for initial data",
-      "Dockerfile templates and production build scripts included",
-      "Technologies used: React (Vite, Context API), Axios, Socket.IO client; Node.js, Express, JWT auth, input validation; MongoDB (Mongoose); Socket.IO server; bcrypt, CORS; dotenv, ESLint, Prettier; Dockerfile & production build scripts"
-    ]
-    // no publication
-  },
+ 
 
   {
     title: "Inference Pipeline with Custom Transformer",
