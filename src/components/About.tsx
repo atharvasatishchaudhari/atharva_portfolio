@@ -34,7 +34,7 @@ export default function About() {
         <p className="text-lg leading-relaxed max-w-5xl">
           I am a passionate <span className="font-bold text-[#D4AF37]">Software Developer</span>,
           <span className="font-bold text-[#D4AF37]"> Data Science enthusiast</span>, and
-          <span className="font-bold text-[#D4AF37]"> AWS Certified Cloud Practitioner</span>
+          <span className="font-bold text-[#D4AF37]"> AWS Certified Cloud Practitioner </span>
           with a track record of building unique projects that solve real-world problems.
           I enjoy transforming complex challenges into impactful solutions through innovative design,
           intelligent systems, and robust cloud architectures.
