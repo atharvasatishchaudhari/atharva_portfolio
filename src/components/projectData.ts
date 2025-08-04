@@ -14,7 +14,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     title: "Household Furniture Detection for Visually Impaired People",
-    duration: "(Aug 2021 – Dec 2021)",
+    duration: "(August 2021 – December 2021)",
     image: "/furniture-detection.png",
     link: "https://github.com/atharvasatishchaudhari/Project-INDOOR_OBJECT_DETECTION_SIFT_KMEANS_PCA_CLASSIFIERS",
     points: [
@@ -32,7 +32,7 @@ export const projects: Project[] = [
 
   {
     title: "Skin Cancer Classification and Detection using VGG-19 and DenseNet",
-    duration: "(Jan 2023 – May 2023)",
+    duration: "(January 2023 – May 2023)",
     image: "/skin-cancer-classification.png",
     link: "https://github.com/atharvasatishchaudhari/Project-skin-cancer-detection-and-classification-system-using-deep-learning",
     points: [
@@ -49,7 +49,7 @@ export const projects: Project[] = [
 
   {
     title: "Feature Analysis and Clustering of Award-Winning Movies and TV Shows",
-    duration: "(Aug 2024 – Dec 2024)",
+    duration: "(August 2024 – December 2024)",
     image: "/movies-analysis.png",
     link: "https://github.com/atharvasatishchaudhari/Project-Feature-Analysis-and-Clustering-of-Award-Winning-Movies-and-TV-Shows-",
     points: [
@@ -92,7 +92,7 @@ export const projects: Project[] = [
 
   {
     title: "Evaluating Semantic Understanding through Medical Text Classification",
-    duration: "(Jan 2025 – May 2025)",
+    duration: "(January 2025 – May 2025)",
     image: "/medical-text-classification.png",
     link: "https://huggingface.co/spaces/atharvasc27112001/Medical_Text_Classification",
     points: [
@@ -111,7 +111,7 @@ export const projects: Project[] = [
 
   {
     title: "University Campus-Wide Lost & Found Service with User Reporting and Admin Notifications",
-    duration: "(Jan 2025 – Jun 2025)",
+    duration: "(January 2025 – June 2025)",
     image: "/lost-found-app.png",
     link: "https://github.com/atharvasatishchaudhari/lost-and-found",
     points: [
